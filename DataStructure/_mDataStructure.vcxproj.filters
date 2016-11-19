@@ -16,6 +16,9 @@
     <Filter Include="Tree">
       <UniqueIdentifier>{69497337-eb90-46d6-ae8e-14636c59c445}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{51d74aef-a06e-40e2-a41f-5333075b9044}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +42,18 @@
     <ClCompile Include="Tree\BSTcpp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Graph\DSGraphA.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\DSGraphB.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\DSUDGraphADMatrix.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\DSUDGraphADList.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DSString.h">
@@ -59,5 +74,22 @@
     <ClInclude Include="Tree\BSTcpp.h">
       <Filter>Tree</Filter>
     </ClInclude>
+    <ClInclude Include="Graph\DSGraphA.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\DSGraphB.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\DSUDGraphADMatrix.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\DSUDGraphADList.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graph\NOTE.MD">
+      <Filter>Graph</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -20,6 +20,11 @@
 #include <BTree.h>
 #include <BreadthFirstSearch.h>
 #include <BSTcpp.h>
+#include <Graph/DSGraphA.h>
+#include <Graph/DSGraphB.h>
+#include <Graph/DSUDGraphADMatrix.h>
+#include <Graph/DSUDGraphADList.h>
+///  >> 11/18/23/2016 BY.gaohuancai QQ1293302539 <<
 
 int main()
 {
@@ -28,6 +33,15 @@ int main()
 	//nsBTree::main_BTree();
 	//nsBreadthFirstSearch::main_BreadthFirstSearch();
 	//BSTTree::main_BSTTree();
+	//nsDSGraphA::main_DSGraphA();
+	///nsDSGraphB::main_DSGraphB();
+
+	///nsDSUDGraphCADMatrix::main_DSGraphADMatrix();
+	///nsDSUDGraphCPPADMatrix::main_DSUDGraphCADMatrix();
+
+	///nsDSUDGraphCADList::main_DSUDGraphCADList();
+	///nsDSUDGraphCPPADList::main_DSUDGraphCPPADList();
+	nsDSUDGraphCPPADListEXTA::main_UDGraphADListEXTA();
 
 	system("pause");
 	return 0;

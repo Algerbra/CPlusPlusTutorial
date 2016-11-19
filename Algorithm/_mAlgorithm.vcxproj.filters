@@ -16,23 +16,32 @@
     <Filter Include="mNote">
       <UniqueIdentifier>{eb4a4c0e-9629-4b35-bc7e-23e450127865}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BasicSort">
+      <UniqueIdentifier>{d691168c-3bed-4329-bb14-f78fd0f82937}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AlgSort.cpp">
+    <ClCompile Include="BasicSort\AlgSort.cpp">
+      <Filter>BasicSort</Filter>
+    </ClCompile>
+    <ClCompile Include="UDGraph\UDGraphTraverseA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="_note\Quicksort.hpp">
-      <Filter>mNote</Filter>
+    <ClInclude Include="BasicSort\AlgSort.h">
+      <Filter>BasicSort</Filter>
     </ClInclude>
-    <ClInclude Include="AlgSort.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BasicSort\Quicksort.hpp">
+      <Filter>BasicSort</Filter>
     </ClInclude>
-    <ClInclude Include="SortTemplate.h">
+    <ClInclude Include="BasicSort\SortTemplate.h">
+      <Filter>BasicSort</Filter>
+    </ClInclude>
+    <ClInclude Include="UDGraph\UDGraphTraverseA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -40,5 +49,6 @@
     <None Include="_note\_const.MD">
       <Filter>mNote</Filter>
     </None>
+    <None Include="UDGraph\depth_first_search.MD" />
   </ItemGroup>
 </Project>

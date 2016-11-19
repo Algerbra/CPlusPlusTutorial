@@ -45,7 +45,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\Tree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\Tree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -67,6 +67,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DSString.cpp" />
+    <ClCompile Include="Graph\DSGraphA.cpp" />
+    <ClCompile Include="Graph\DSUDGraphADList.cpp" />
+    <ClCompile Include="Graph\DSUDGraphADMatrix.cpp" />
+    <ClCompile Include="Graph\DSGraphB.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tree\BinaryTree.cpp" />
     <ClCompile Include="Tree\BreadthFirstSearch.cpp" />
@@ -76,11 +80,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DSString.h" />
+    <ClInclude Include="Graph\DSGraphA.h" />
+    <ClInclude Include="Graph\DSUDGraphADList.h" />
+    <ClInclude Include="Graph\DSUDGraphADMatrix.h" />
+    <ClInclude Include="Graph\DSGraphB.h" />
     <ClInclude Include="Tree\BinaryTree.h" />
     <ClInclude Include="Tree\BreadthFirstSearch.h" />
     <ClInclude Include="Tree\BSTcpp.h" />
     <ClInclude Include="Tree\BSTree.h" />
     <ClInclude Include="Tree\BTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graph\NOTE.MD" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
