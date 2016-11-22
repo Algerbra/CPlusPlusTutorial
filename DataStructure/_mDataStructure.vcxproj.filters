@@ -54,6 +54,9 @@
     <ClCompile Include="Graph\DSUDGraphADList.cpp">
       <Filter>Graph</Filter>
     </ClCompile>
+    <ClCompile Include="Graph\UGraphImp.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DSString.h">
@@ -84,6 +87,9 @@
       <Filter>Graph</Filter>
     </ClInclude>
     <ClInclude Include="Graph\DSUDGraphADList.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\UGraphImp.h">
       <Filter>Graph</Filter>
     </ClInclude>
   </ItemGroup>

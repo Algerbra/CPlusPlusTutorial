@@ -65,12 +65,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Application\DS_Algorithm\Graph\UGraphTemplate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stl_iterator\STLiterator.cpp" />
     <ClCompile Include="stl_iterator\STLiterator_auxiliary_function.cpp" />
     <ClCompile Include="stl_iterator\STLiterator_traits.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Application\DS_Algorithm\Graph\UGraphTemplate.h" />
     <ClInclude Include="stl_iterator\STLiterator.h" />
     <ClInclude Include="stl_iterator\STLiterator_auxiliary_function.h" />
     <ClInclude Include="stl_iterator\STLiterator_traits.h" />

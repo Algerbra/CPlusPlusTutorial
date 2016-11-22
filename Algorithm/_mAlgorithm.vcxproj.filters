@@ -30,6 +30,12 @@
     <ClCompile Include="UDGraph\UDGraphTraverseA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UDGraph\DGraphSearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UDGraph\DGraphSearchEA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicSort\AlgSort.h">
@@ -42,6 +48,12 @@
       <Filter>BasicSort</Filter>
     </ClInclude>
     <ClInclude Include="UDGraph\UDGraphTraverseA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UDGraph\DGraphSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UDGraph\DGraphSearchEA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

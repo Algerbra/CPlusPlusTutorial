@@ -68,12 +68,16 @@
   <ItemGroup>
     <ClCompile Include="BasicSort\AlgSort.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UDGraph\DGraphSearch.cpp" />
+    <ClCompile Include="UDGraph\DGraphSearchEA.cpp" />
     <ClCompile Include="UDGraph\UDGraphTraverseA.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicSort\AlgSort.h" />
     <ClInclude Include="BasicSort\Quicksort.hpp" />
     <ClInclude Include="BasicSort\SortTemplate.h" />
+    <ClInclude Include="UDGraph\DGraphSearch.h" />
+    <ClInclude Include="UDGraph\DGraphSearchEA.h" />
     <ClInclude Include="UDGraph\UDGraphTraverseA.h" />
   </ItemGroup>
   <ItemGroup>

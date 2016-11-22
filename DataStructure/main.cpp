@@ -24,6 +24,8 @@
 #include <Graph/DSGraphB.h>
 #include <Graph/DSUDGraphADMatrix.h>
 #include <Graph/DSUDGraphADList.h>
+#include <Graph/UGraphImp.h>
+
 ///  >> 11/18/23/2016 BY.gaohuancai QQ1293302539 <<
 
 int main()
@@ -41,7 +43,9 @@ int main()
 
 	///nsDSUDGraphCADList::main_DSUDGraphCADList();
 	///nsDSUDGraphCPPADList::main_DSUDGraphCPPADList();
-	nsDSUDGraphCPPADListEXTA::main_UDGraphADListEXTA();
+	///nsDSUDGraphCPPADListEXTA::main_UDGraphADListEXTA();
+
+	nsUGraphImp::main_UGraphImp();
 
 	system("pause");
 	return 0;

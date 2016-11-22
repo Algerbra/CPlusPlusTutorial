@@ -71,6 +71,7 @@
     <ClCompile Include="Graph\DSUDGraphADList.cpp" />
     <ClCompile Include="Graph\DSUDGraphADMatrix.cpp" />
     <ClCompile Include="Graph\DSGraphB.cpp" />
+    <ClCompile Include="Graph\UGraphImp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tree\BinaryTree.cpp" />
     <ClCompile Include="Tree\BreadthFirstSearch.cpp" />
@@ -84,6 +85,7 @@
     <ClInclude Include="Graph\DSUDGraphADList.h" />
     <ClInclude Include="Graph\DSUDGraphADMatrix.h" />
     <ClInclude Include="Graph\DSGraphB.h" />
+    <ClInclude Include="Graph\UGraphImp.h" />
     <ClInclude Include="Tree\BinaryTree.h" />
     <ClInclude Include="Tree\BreadthFirstSearch.h" />
     <ClInclude Include="Tree\BSTcpp.h" />
