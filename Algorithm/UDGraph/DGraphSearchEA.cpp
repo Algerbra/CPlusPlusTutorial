@@ -167,60 +167,82 @@ namespace nsDGraphSearchEA
 
 
 	/************************************************************************
-	  Dijkstra alo.
+	  Dijkstra alo;
 		https://en.wikipedia.org/wiki/Dijkstra's_algorithm
 		http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
 		http://blog.csdn.net/ebowtang/article/details/44262701
+		http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/GraphAlgor/dijkstraAlgor.htm
 
-
+		This implementation of Dijkstra may have some performance problem..
+		but the algorithm is yes;
 	/************************************************************************/
 	template<class NameType, class DistType>
-	void Graph<NameType, DistType>::Dijkstra(int v, DistType *shPath)
+	void Graph<NameType, DistType>::Dijkstra(int VertexStart, DistType *shPath)
 	{
 		int num = GetNumVertexs();
 		int *visited = new int[num];
 
+		// Costs_initialization between Vertex_Pivot to one-of Vertex_Others.
 		for (int i = 0; i < num; i++)
-		{//初始化  ;
-			visited[i] = 0;//未访问 ; 
-			shPath[i] = this->GetWeight(v, i);//顶点v（当前中间点）到各个相邻顶点的边权值，其他情况返回无穷大 ; 
+		{
+			visited[i] = 0;
+			shPath[i] = this->GetWeight(VertexStart, i);//顶点VertexPivot（当前中间点）到各个相邻顶点的边权值，其他情况返回无穷大 ; 
 		}
 
-		visited[v] = 1;//第v个顶点初始化为被访问，并以他为中点点开始找最短路径 ; 
+		///[00]
+		visited[VertexStart] = 1;// Vertex_Pivot initialized as the starting vertex;个顶点初始化为被访问，并以他为中点点开始找最短路径 ; 
+
 
 		for (int i = 1; i < num; i++)
 		{
-			DistType min = this->m_Infinity;
-			int u = 0;
+			DistType costMin = this->m_Infinity;
+			int VertexPivot = 0;// used for the moving VertexPivot
 
-			//寻找新的中间点u，依据就是数组中权值最小的那个点的位置（且没被访问过）  ;
+			///[01] Finding the Cost_Minimum Vertex_min described as THE_closest Vertex_Node adjacent to VertexPivot;
+			///[01] the loop for finding the Cost_Minimum among the Vertex_visited_before;
 			for (int j = 0; j < num; j++)
 			{
+				/// does it have visited yet ?
 				if (!visited[j])
 				{
-					if (shPath[j] < min)
+					/// is its more closer to the VertexPivot ?
+					if (shPath[j] < costMin)
 					{
-						min = shPath[j];//获得当前shPath数组中的最小边权重 ; 
-						u = j;//用u来记录获取最小值时的顶点位置,即新的中间点 ; 
+						/// update the minimum cost between VertexPivot to its closest adjacent Vertex_node
+						/// costMin is the cost between the Vertex_Starting to current VertexPivot.
+						costMin = shPath[j];
+
+						/// update the VertexPivot by the node which is the closest adjacent to VertexPivot
+						VertexPivot = j;
 					}
 				}
-			}
 
-			visited[u] = 1;//已经确定的最短路径  ;
+			}// end for vertex_visited_before
 
-			//以u为中间点寻找顶点v到顶点w的最短路径  ;
+
+			visited[VertexPivot] = 1;// marking as visited
+
+
+			///[] Finding the Cost_Minimum between Vertex_u to the Vertex_node that unvisited before
+			///[] the loop for Update Predecessor of All Vertex_nodes Adjacent to VertexPivot and the Cost_;
 			for (int w = 0; w < num; w++)
 			{
-				DistType weight = this->GetWeight(u, w);//顶点u（当前中间点）到各个相邻顶点的边权值，其他情况返回无穷大  ;
+				///[] retrieve the Cost between VertexPivot_u to Vertex_node_w,which will be infinity if <w> isn't adjacent to <u>;
+				DistType weight = this->GetWeight(VertexPivot, w);
+
+				///[] does Vertex_node_w have visited yet ? and is Vertex_node_w adjacent to Vertex_node_u ?
 				if (!visited[w] && weight != this->m_Infinity)
 				{
-					if (shPath[u] + weight < shPath[w])
-					{
-						shPath[w] = shPath[u] + weight;//更新顶点v到w的最短路径值  ;
-					}
+					///[] Update the Cost between VertexSource to Vertex_node_w to the Relaxed Cost_value based on the Cost_Minimum and 'weight'
+					if (shPath[VertexPivot] + weight < shPath[w])
+						///[] Relax Vertex_node_w adjacent to VertexPivot_u
+						shPath[w] = shPath[VertexPivot] + weight;
+
 				}
-			}
+
+			}// end for update
 		}
+
 		delete[] visited;
 	}
 

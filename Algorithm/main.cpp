@@ -9,6 +9,7 @@
 #include <UDGraph/UDGraphTraverseA.h>
 #include <UDGraph/DGraphSearch.h>
 #include <UDGraph/DGraphSearchEA.h>
+#include <UDGraph/UDWGAdjListDijkstraALGO.h>
 
 int main()
 {
@@ -19,7 +20,10 @@ int main()
 
 	///nsDGraphSearch::main_DGraphTraversal();
 
-	nsDGraphSearchEA::main_DGraphSearchEA();
+	///nsDGraphSearchEA::main_DGraphSearchEA();
+	nsUDWGAdjListDijkstraALGO::main_UDWGAdjListDijkstraALGO();
+
+
 
 	system("pause");
 	return 0;

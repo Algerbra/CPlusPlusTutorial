@@ -68,6 +68,7 @@
   <ItemGroup>
     <ClCompile Include="BasicSort\AlgSort.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UDGraph\UDWGAdjListDijkstraALGO.cpp" />
     <ClCompile Include="UDGraph\DGraphSearch.cpp" />
     <ClCompile Include="UDGraph\DGraphSearchEA.cpp" />
     <ClCompile Include="UDGraph\UDGraphTraverseA.cpp" />
@@ -76,6 +77,7 @@
     <ClInclude Include="BasicSort\AlgSort.h" />
     <ClInclude Include="BasicSort\Quicksort.hpp" />
     <ClInclude Include="BasicSort\SortTemplate.h" />
+    <ClInclude Include="UDGraph\UDWGAdjListDijkstraALGO.h" />
     <ClInclude Include="UDGraph\DGraphSearch.h" />
     <ClInclude Include="UDGraph\DGraphSearchEA.h" />
     <ClInclude Include="UDGraph\UDGraphTraverseA.h" />
