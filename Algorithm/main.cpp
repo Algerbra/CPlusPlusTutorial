@@ -10,6 +10,7 @@
 #include <UDGraph/DGraphSearch.h>
 #include <UDGraph/DGraphSearchEA.h>
 #include <UDGraph/UDWGAdjListDijkstraALGO.h>
+#include <AStar/algoAStar.h>
 
 int main()
 {
@@ -21,7 +22,9 @@ int main()
 	///nsDGraphSearch::main_DGraphTraversal();
 
 	///nsDGraphSearchEA::main_DGraphSearchEA();
-	nsUDWGAdjListDijkstraALGO::main_UDWGAdjListDijkstraALGO();
+	///nsUDWGAdjListDijkstraALGO::main_UDWGAdjListDijkstraALGO();
+
+	nsalgoAStar::main_algoAStar();
 
 
 

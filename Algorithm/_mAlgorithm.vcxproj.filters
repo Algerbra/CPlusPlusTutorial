@@ -39,6 +39,9 @@
     <ClCompile Include="UDGraph\UDWGAdjListDijkstraALGO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AStar\algoAStar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicSort\AlgSort.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UDGraph\UDWGAdjListDijkstraALGO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\algoAStar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -66,6 +66,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AStar\algoAStar.cpp" />
     <ClCompile Include="BasicSort\AlgSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UDGraph\UDWGAdjListDijkstraALGO.cpp" />
@@ -74,6 +75,7 @@
     <ClCompile Include="UDGraph\UDGraphTraverseA.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AStar\algoAStar.h" />
     <ClInclude Include="BasicSort\AlgSort.h" />
     <ClInclude Include="BasicSort\Quicksort.hpp" />
     <ClInclude Include="BasicSort\SortTemplate.h" />
