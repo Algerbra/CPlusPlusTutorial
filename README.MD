@@ -1,6 +1,17 @@
   *****************************************************************************************
   *****************************************************************************************
   *****************************************************************************************
+ A#
+ A##
+ A###
+ A####
+ A*A*
+ A**A**
+ A * B
+ A * * B
+ A > We're living the future so
+ A > the present is our past..
+ *
  *  [11/26/2016]                                                                            
  *    **数据结构完成**                                                                      
  *                 Binary Sorted Tree/                                                      
@@ -24,11 +35,11 @@
  
  ## 
  
- *  #02#  数据结构目录下添加 Representation of Graph: Adjacency-Matrix && Adjacency-List
- *  #03#  算法目录下添加 Traversal of Graph: Breadth-First-Search && Depth-First-Search
+ *  **02**  数据结构目录下添加 Representation of Graph: Adjacency-Matrix && Adjacency-List
+ *  **03**  算法目录下添加 Traversal of Graph: Breadth-First-Search && Depth-First-Search
  *
- *	#00# 该目录包括基本的CPP-syntax, 基础算法,基础数据结构,STL的一些内容.
- *	#01# 不定时更新,但不保证能够.
+ *  **00** 该目录包括基本的CPP-syntax, 基础算法,基础数据结构,STL的一些内容.
+ *  **01** 不定时更新,但不保证能够.
  *
- *                                                                 ##QQ##1293302539
+ *                                                                 **QQ**1293302539
  ##
