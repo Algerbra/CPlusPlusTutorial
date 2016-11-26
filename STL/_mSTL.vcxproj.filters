@@ -28,6 +28,9 @@
     <Filter Include="Application\DS_Algorithm\Graph">
       <UniqueIdentifier>{4686194e-61eb-4cf6-a2de-1fa8f2e742e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="stl_usage">
+      <UniqueIdentifier>{c5fdfa08-d30b-4c0e-b1af-eb66a6cd56c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="Application\DS_Algorithm\Graph\UGraphTemplate.cpp">
       <Filter>Application\DS_Algorithm\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="stl_usage\us_PriorityQueue.cpp">
+      <Filter>stl_usage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stl_iterator\STLiterator.h">
@@ -58,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="Application\DS_Algorithm\Graph\UGraphTemplate.h">
       <Filter>Application\DS_Algorithm\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_usage\us_PriorityQueue.h">
+      <Filter>stl_usage</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

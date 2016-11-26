@@ -44,7 +44,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\stl_iterator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\stl_iterator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -70,12 +70,14 @@
     <ClCompile Include="stl_iterator\STLiterator.cpp" />
     <ClCompile Include="stl_iterator\STLiterator_auxiliary_function.cpp" />
     <ClCompile Include="stl_iterator\STLiterator_traits.cpp" />
+    <ClCompile Include="stl_usage\us_PriorityQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application\DS_Algorithm\Graph\UGraphTemplate.h" />
     <ClInclude Include="stl_iterator\STLiterator.h" />
     <ClInclude Include="stl_iterator\STLiterator_auxiliary_function.h" />
     <ClInclude Include="stl_iterator\STLiterator_traits.h" />
+    <ClInclude Include="stl_usage\us_PriorityQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
