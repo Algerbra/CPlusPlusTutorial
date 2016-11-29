@@ -9,7 +9,7 @@
 #include <vector>
 #include "STLiterator_traits.h"
 
-
+#include <climits>
 namespace nsSTLTraits
 {
 	static std::vector<int> colInt({ 23, 4, 21, 15, 6, 2, 34, 5 });
@@ -37,6 +37,11 @@ namespace nsSTLTraits
 		std::cout << "foo \n";
 		for (std::string & x : foo)
 			std::cout << x << ' ';
+
+
+		/// ///////////////////////////////////////////////////////////////////////
+		float fmax = std::numeric_limits<float>::max();
+		float fmin = std::numeric_limits<float>::min();
 
 		return 0;
 	}

@@ -31,6 +31,9 @@
     <Filter Include="stl_usage">
       <UniqueIdentifier>{c5fdfa08-d30b-4c0e-b1af-eb66a6cd56c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ITERATOR">
+      <UniqueIdentifier>{c9c7044d-54f7-4625-a1e5-7b0da563f4a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +54,12 @@
     <ClCompile Include="stl_usage\us_PriorityQueue.cpp">
       <Filter>stl_usage</Filter>
     </ClCompile>
+    <ClCompile Include="ITERATOR\STL_1127_Iterator.cpp">
+      <Filter>ITERATOR</Filter>
+    </ClCompile>
+    <ClCompile Include="ITERATOR\STL_iterator_traits.cpp">
+      <Filter>ITERATOR</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stl_iterator\STLiterator.h">
@@ -67,6 +76,12 @@
     </ClInclude>
     <ClInclude Include="stl_usage\us_PriorityQueue.h">
       <Filter>stl_usage</Filter>
+    </ClInclude>
+    <ClInclude Include="ITERATOR\STL_1127_Iterator.h">
+      <Filter>ITERATOR</Filter>
+    </ClInclude>
+    <ClInclude Include="ITERATOR\STL_iterator_traits.h">
+      <Filter>ITERATOR</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

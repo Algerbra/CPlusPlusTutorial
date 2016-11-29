@@ -57,6 +57,37 @@ void ProcessValue(int && i)
 
 namespace nsSTLmove
 {
+
+	// http://stackoverflow.com/questions/25286544/how-does-the-standard-library-implement-stdswap
+	// 
+	template <typename T>
+	void stdmove_std03_swap(T & t1, T & t2)
+	{
+		T tmp(t1);	//duplicate t1,with expensive copy of each element
+		t1 = t2;	// discard the original contents of t1,and replace them with an expensive duplicate of t2....
+		t2 = tmp;	//discard the original contents of t2,and replace them with an expensive duplicate of tmp...
+					// implicitly destroy the expensive temporary copy of t1.....
+	}
+
+	//
+	// This is an improvement over the classic C++03 implementation in terms of resource management
+	// because it prevents unneeded copies, etc.
+	// It, the C++11 std::swap, requires the type T to be MoveConstructible and
+	// MoveAssignable, thus allowing for the implementation and the improvements.
+	//
+	template <typename T>
+	void stdmove_std11_swap(T & t1, T & t2)
+	{
+		T temp = std::move(t1);
+		t1     = std::move(t2);
+		t2     = std::move(temp);
+	}
+
+
+	/************************************************************************/
+	/*                                                                      */
+	/************************************************************************/
+
 	int main_STL_Rvalue_Reference()
 	{
 		if (false){
